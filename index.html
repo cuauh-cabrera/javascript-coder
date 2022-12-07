@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>SEGUNDA PRE-ENTREGA JAVASCRIPT</h1>
     </header>
     <hr>
     <main>
-        <h2>
-            CALCULADORA DE INDICE DE MASA CORPORAL (IMC) - BATCH VERSION
-        </h2>
+        <div id="contenedor">
+            <h2>
+                CALCULADORA DE INDICE DE MASA CORPORAL (IMC) - BATCH VERSION
+            </h2>
+            <form action="">
+                Nombre : <input type="text" id="paciente">
+                Peso en Kg: <input type="number" step=".01" name="peso" id="peso">
+                Talla en metros: <input type="number" step=".01" name="talla" id="talla">
+                <button type="button" id="enviar">Calcular</button>
+                <button type="reset">Limpiar datos</button>
+            </form>
+        </div>
+        <div id="notificacion"></div>
     </main>
 
-    <script src="../index.js"></script>
+    <script src="./index.js"></script>
 </body>
+
 </html>
